@@ -1,3 +1,8 @@
 main.o
+
+# executables
 sfml-first
+rectangle
+
+# visual studio code configuration
 .vscode/
