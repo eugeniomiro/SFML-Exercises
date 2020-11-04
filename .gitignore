@@ -3,6 +3,7 @@ main.o
 # executables
 sfml-first
 rectangle
+BouncingMushroom
 
 # visual studio code configuration
 .vscode/
