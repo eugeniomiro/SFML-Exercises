@@ -1,4 +1,4 @@
-# SFML Exercises
+# [SFML](https://www.sfml-dev.org/download.php) Exercises
 
 * ## **first/** : First application 
 
@@ -7,5 +7,6 @@
 
   This project assumes SFML library is built in ```../SFML``` folder
 
-Project Evolution from [SFML Game Development By Example](https://www.programmer-books.com/wp-content/uploads/2019/10/SFML-Game-Development-By-Example.pdf)
+* ## Project Evolution from [SFML Game Development By Example](https://www.programmer-books.com/wp-content/uploads/2019/10/SFML-Game-Development-By-Example.pdf) but on Linux (Debian for now)
 
+  a
