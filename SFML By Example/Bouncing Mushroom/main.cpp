@@ -10,9 +10,12 @@ int main(int argc, char* argv[])
 	sf::Vector2u size = mushroomTexture.getSize();
 	mushroom.setOrigin(size.x / 2, size.y / 2);
 	sf::Vector2f increment(0.4f, 0.4f);
+	sf::Color mushroomColor = mushroom.getColor();
+	sf::Color hitColor = sf::Color(0, 0, 255, 255); 
 
 	while(window.isOpen())
 	{
+		mushroom.setColor(mushroomColor);
 		sf::Event event;
 		while(window.pollEvent(event))
 		{
@@ -29,6 +32,7 @@ int main(int argc, char* argv[])
 		{
 			// Reverse the direction on X axis.
 			increment.x = -increment.x;
+			mushroom.setColor(hitColor); 
 		}
 		if ((mushroom.getPosition().y + (size.y / 2) > 
 		     window.getSize().y && increment.y > 0) ||
@@ -37,6 +41,7 @@ int main(int argc, char* argv[])
 		{
 			// Reverse the direction on Y axis.
 			increment.y = -increment.y;
+			mushroom.setColor(hitColor); 
 		}
 
 		mushroom.setPosition(mushroom.getPosition() + increment);
