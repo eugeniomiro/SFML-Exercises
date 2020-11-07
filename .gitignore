@@ -1,9 +1,10 @@
-main.o
+*.o
 
 # executables
 sfml-first
 rectangle
 BouncingMushroom
+ravioli
 
 # visual studio code configuration
 .vscode/
