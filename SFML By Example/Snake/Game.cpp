@@ -1,14 +1,15 @@
-#include "World.h"
-#include "Snake.h"
 #include "Game.h"
 
 Game::Game()
 	: _window("Snake", sf::Vector2u(800, 600)),
           _world(sf::Vector2u(800, 600)),
-          _snake(_world.GetBlockSize())
+          _snake(_world.GetBlockSize()),
+	  _textbox(5, 14, 350, sf::Vector2f(255, 0))
 {
 	// Setting up class members.
 	_increment = sf::Vector2i(400, 400);
+
+	_textbox.Add("Seeded random number generator with: " + std::to_string(time(NULL)));	
 }
 
 Game::~Game() { }
@@ -35,6 +36,7 @@ void Game::Render()
 	_window.BeginDraw();	// Clear
 	_world.Render(*_window.GetRenderWindow());
 	_snake.Render(*_window.GetRenderWindow());
+	_textbox.Render(*_window.GetRenderWindow());
 	_window.EndDraw();	// Display
 }
 

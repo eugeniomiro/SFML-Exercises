@@ -1,3 +1,5 @@
+#ifndef WORLD_H
+#define WORLD_H
 #include "Snake.h"
 
 class World
@@ -21,4 +23,4 @@ class World
 		sf::CircleShape _appleShape;
 		sf::RectangleShape _bounds[4];
 };
-
+#endif

@@ -1,4 +1,7 @@
 #include "Window.h"
+#include "World.h"
+#include "Snake.h"
+#include "Textbox.h"
 
 class Game
 {
@@ -16,9 +19,10 @@ class Game
 		Snake        _snake;
 
 	private:
-		Window _window;
+		Window       _window;
 		sf::Vector2i _increment;
 		sf::Clock    _clock;
 		float        _elapsed;
+		Textbox      _textbox;
 };
 
