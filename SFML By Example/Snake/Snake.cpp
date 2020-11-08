@@ -27,8 +27,6 @@ void Snake::Reset()
 
 void Snake::SetDirection(Direction direction) { _dir = direction; }
 
-Direction Snake::GetDirection() { return _dir; }
-
 int Snake::GetSpeed() { return _speed; }
 
 sf::Vector2i Snake::GetPosition()
@@ -181,4 +179,25 @@ void Snake::Render(sf::RenderWindow& window)
 		window.draw(_bodyRect);
 	}
 }
+
+Direction Snake::GetPhysicalDirection()
+{
+	if (_snakeBody.size() <= 1) {
+		return Direction::None;
+	}
+
+	SnakeSegment& head = _snakeBody[0];
+	SnakeSegment& neck = _snakeBody[1];
+
+	if (head.position.x == neck.position.x)
+	{
+		return (head.position.y > neck.position.y ? Direction::Down : Direction::Up);
+	}
+	else if (head.position.y == neck.position.y)
+	{
+		return (head.position.x > neck.position.x ? Direction::Right : Direction::Left);
+	}
+	return Direction::None;
+}
+
 

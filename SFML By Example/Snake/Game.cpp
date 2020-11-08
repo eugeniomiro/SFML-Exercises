@@ -41,22 +41,22 @@ void Game::Render()
 void Game::HandleInput()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) &&
-            _snake.GetDirection() != Direction::Down)
+            _snake.GetPhysicalDirection() != Direction::Down)
 	{
 		_snake.SetDirection(Direction::Up);
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) &&
-                 _snake.GetDirection() != Direction::Up)
+                 _snake.GetPhysicalDirection() != Direction::Up)
 	{
 		_snake.SetDirection(Direction::Down);
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) &&
-                 _snake.GetDirection() != Direction::Right)
+                 _snake.GetPhysicalDirection() != Direction::Right)
 	{
 		_snake.SetDirection(Direction::Left);
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) &&
-                 _snake.GetDirection() != Direction::Left)
+                 _snake.GetPhysicalDirection() != Direction::Left)
 	{
 		_snake.SetDirection(Direction::Right);
 	}

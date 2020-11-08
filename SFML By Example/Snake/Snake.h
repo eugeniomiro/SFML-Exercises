@@ -21,7 +21,6 @@ class Snake
 
 		// Helper methods.
 		void SetDirection(Direction dir);
-		Direction GetDirection();
 		int GetSpeed();
 		sf::Vector2i GetPosition();
 		int GetLives();
@@ -39,6 +38,7 @@ class Snake
 		void Tick();	// Update method.
 		void Cut(int segments);	// Method for cutting the snake.
 		void Render(sf::RenderWindow& window);
+		Direction GetPhysicalDirection();
 
 	private:
 		void CheckCollision();
