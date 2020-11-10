@@ -6,6 +6,8 @@ Game::Game()
           _snake(_world.GetBlockSize()),
 	  _textbox(5, 14, 350, sf::Vector2f(255, 0))
 {
+	// init random number generator
+	srand(time(nullptr));
 	// Setting up class members.
 	_increment = sf::Vector2i(400, 400);
 

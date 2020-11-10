@@ -1,7 +1,7 @@
 #ifndef SNAKE_H
 #define SNAKE_H
 #include <SFML/Graphics.hpp>
-#include <vector>
+#include <deque>
 
 struct SnakeSegment
 {
@@ -9,7 +9,7 @@ struct SnakeSegment
 	sf::Vector2i position;
 };
 
-using SnakeContainer = std::vector<SnakeSegment>;
+using SnakeContainer = std::deque<SnakeSegment>;
 
 enum class Direction { None, Up, Down, Left, Right };
 
