@@ -22,7 +22,12 @@ void Game::Update()
 	if (_elapsed >= timestep)
 	{
 		_snake.Tick();
+		int prevScore = _snake.GetScore();
 		_world.Update(_snake);
+		if (prevScore < _snake.GetScore())
+		{
+			_textbox.Add("You ate an apple. Score: " + std::to_string(_snake.GetScore()));
+		}
 		_elapsed -= timestep;
 		if (_snake.HasLost())
 		{
