@@ -26,6 +26,7 @@ void Game::Update()
 		_elapsed -= timestep;
 		if (_snake.HasLost())
 		{
+			_textbox.Add("GAME OVER. Score = " + std::to_string(_snake.GetScore()));
 			_snake.Reset();
 		}
 	}
