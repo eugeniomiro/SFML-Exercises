@@ -11,3 +11,7 @@ snake
 .vscode/
 Step?_build/
 Testing/Temporary/
+**/*.cmake
+CMakeFiles/
+Makefile
+CMakeCache.txt
