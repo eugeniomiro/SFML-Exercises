@@ -15,7 +15,6 @@ double mysqrt(double x)
 	    << " using log and exp " << std::endl;
 #else
   double result = x;
-#endif
 
   // do ten iterations
   for (int i = 0; i < 10; ++i) {
@@ -26,5 +25,6 @@ double mysqrt(double x)
     result = result + 0.5 * delta / result;
     std::cout << "Computing sqrt of " << x << " to be " << result << std::endl;
   }
+#endif
   return result;
 }
