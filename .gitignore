@@ -9,7 +9,7 @@ snake
 
 # visual studio code configuration
 .vscode/
-Step?_build/
+Step*_build/
 Testing/Temporary/
 **/*.cmake
 CMakeFiles/
