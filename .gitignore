@@ -15,7 +15,7 @@ cmake_install.cmake
 Tutorial-1.0-Linux.sh
 Tutorial-1.0-Linux.tar*
 _CPack_Packages/
-Step*_build/
+*build/
 debug/
 release/
 Testing/Temporary/
