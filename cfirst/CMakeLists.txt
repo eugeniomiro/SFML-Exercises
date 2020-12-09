@@ -33,7 +33,13 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
   include_directories("${gtest_SOURCE_DIR}/include")
 endif()
 
+#SFML Package
+find_package(SFML 2.5 CONFIG COMPONENTS system window graphics network audio REQUIRED)
+
+# source files
+set(SOURCE_FILES cfirst.cpp)
+
 # Now simply link against gtest or gtest_main as needed. Eg
-add_executable(cfirst cfirst.cpp)
-target_link_libraries(cfirst gtest_main)
-add_test(NAME cfirst_test COMMAND cfirst)
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+target_link_libraries(${PROJECT_NAME} gtest_main sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
+add_test(NAME cfirst_test COMMAND ${PROJECT_NAME})
