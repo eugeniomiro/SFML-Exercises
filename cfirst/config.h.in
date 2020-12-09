@@ -1,0 +1,3 @@
+#define cfirst_VERSION_MAJOR @cfirst_VERSION_MAJOR@
+#define cfirst_VERSION_MINOR @cfirst_VERSION_MINOR@
+
