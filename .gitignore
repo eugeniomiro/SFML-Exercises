@@ -9,3 +9,16 @@ snake
 
 # visual studio code configuration
 .vscode/
+
+CTestTestfile.cmake
+cmake_install.cmake
+Tutorial-1.0-Linux.sh
+Tutorial-1.0-Linux.tar*
+_CPack_Packages/
+*build/
+debug/
+release/
+Testing/Temporary/
+CMakeFiles/
+Makefile
+CMakeCache.txt
