@@ -1,3 +1,4 @@
+list(APPEND CMAKE_PREFIX_PATH "../../../SFML")
 find_package(Threads REQUIRED)
 
 # Download and unpack googletest at configure time

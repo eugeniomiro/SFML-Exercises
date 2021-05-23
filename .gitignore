@@ -12,10 +12,9 @@ snake
 
 # Visual Studio ignored files
 .vs/
-CMakeTutorial/*.vcxproj
-CMakeTutorial/*.vcxproj.filters
-CMakeTutorial/*.sln
-CMakeTutorial/TutorialConfig.h
+*.vcxproj
+*.vcxproj.filters
+*.sln
 
 CTestTestfile.cmake
 cmake_install.cmake
@@ -29,3 +28,7 @@ Testing/Temporary/
 CMakeFiles/
 Makefile
 CMakeCache.txt
+CMakeTutorial/TutorialConfig.h
+cfirst/config.h
+cfirst/tests/googletest-download/
+cfirst/tests/googletest-src/

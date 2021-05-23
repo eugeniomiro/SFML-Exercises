@@ -1,4 +1,5 @@
 #SFML Package
+list(APPEND CMAKE_PREFIX_PATH "../../../SFML")
 find_package(SFML 2.5 CONFIG COMPONENTS system window graphics network audio REQUIRED)
 
 # source files
