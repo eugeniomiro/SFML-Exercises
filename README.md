@@ -2,7 +2,7 @@
 
 ## **Configuration**
 
-All projects assume SFML library is built in ```../SFML``` folder
+All projects assume SFML library is built from [code](https://github.com/SFML/SFML) in ```../SFML``` folder
 
 * ## **first/** : First application 
 

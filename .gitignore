@@ -10,6 +10,13 @@ snake
 # visual studio code configuration
 .vscode/
 
+# Visual Studio ignored files
+.vs/
+CMakeTutorial/*.vcxproj
+CMakeTutorial/*.vcxproj.filters
+CMakeTutorial/*.sln
+CMakeTutorial/TutorialConfig.h
+
 CTestTestfile.cmake
 cmake_install.cmake
 Tutorial-1.0-Linux.sh
